@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<navigation name="apsCourse" buildId="" rmsBuildId="" pageAttribute="All" xml:lang="en-us">
+  <settings mediaLocation="Local" reviewMode="false" pageFeedbackType="None" evaluationsDisabled="ShowInModal" mustAnswerAllEvalQuestionsPre="true" mustAnswerAllEvalQuestions="true" evaluationForm="" evaluationFormPre="" contentAreaMinWidth="700" contentAreaMinHeight="466">
+    <mediaURL><![CDATA[https://smoothstreamit.gtm.corp.microsoft.com/SMSGR/BUILDID/]]></mediaURL>
+    <courseTranscript><![CDATA[]]></courseTranscript>
+    <headerLinks>
+      <headerLink cssStyle="HeaderLink-Yammer">
+        <name><![CDATA[Yammer]]></name>
+      </headerLink>
+      <headerLink cssStyle="HeaderLink-LyncChat">
+        <name><![CDATA[Lync Chat]]></name>
+      </headerLink>
+      <headerLink cssStyle="HeaderLink-Email">
+        <name><![CDATA[Email]]></name>
+      </headerLink>
+      <headerLink cssStyle="HeaderLink-SpecializedHelp">
+        <name><![CDATA[Specialized Help]]></name>
+      </headerLink>
+    </headerLinks>
+    <mercury>
+      <url><![CDATA[]]></url>
+    </mercury>
+  </settings>
+  <private />
+  <level0 name="New Module" mustCompletePrevModules="false" modulesToComplete="" mustCompleteRequiredPages="false" expanded="true" hidden="false">
+    <level1 name="Test Info" typeId="5C748AD0-EDAA-48EB-A715-98F3301200F9" pageId="1" contribute="r" time="1" internal="true" partnerReady="false" expanded="false" hidden="false" />
+  </level0>
+</navigation>

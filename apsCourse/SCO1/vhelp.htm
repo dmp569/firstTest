@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SCORM 1.2 Visualizer Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p>SCORM Visualizer acts like a SCORM 1.2 LMS on your desktop.  Visualizer shows you all of the communications between your SCO and the SCORM 1.2 Runtime API.</p>
+<h3>Launching a SCO </h3>
+<p>SCORM Visualizer is launched in a browser window when you launch your course from the Access Point Studio (your course contains one SCO). SCORM Visualizer will automatically launch your SCO by launching <strong>LaunchSCO-voyager.htm</strong> in a popup window. The size of the popup window is identical to the window size in Voyager and Learning Central.</p>
+<p>After you have launched the SCO, you will see how the SCO is using the SCORM Runtime API in the bottom of the Visualizer 
+    window. The bottom window shows a log of the SCORM API calls. When your course calls LMSSetValue, you will see the  SCORM data item  updated 
+    in the SCORM data window. You can modify the SCORM  data by clicking on the name of the data item.</p>
+<p>There is a separator bar between the log window and the SCORM data window. You can move the separator bar to change the size of the windows. </p>
+<p>Now that your SCO has been launched, interact with your SCO and examine the changes to the log and the SCORM data window. When you are done interacting with the SCO, close its window. </p>
+<h3>Relaunching a SCO </h3>
+<p>One of the most powerful features of  Visualizer is the ability to relaunch 
+  a SCO in a new session. In the new session, your SCO will be able to access cmi.core.lesson_status, 
+  cmi.suspend_data and other data items set in previous sessions. To relaunch your SCO, click on the 
+  <input name="Relaunch" type="button" id="Relaunch" value="Relaunch"> 
+  button.</p>
+<h3>Reset the SCORM Data</h3>
+<p>If you have launched your SCO one or more times, it has probably set one or more of the SCORM data items. After a few launches, you might want to reset the SCORM data to its original values so you can try an initial launch again. To reset the SCORM data, click on the 
+  <input name="Reset" type="button" id="Reset" value="Reset"> 
+  button.</p>
+<h3>Saving and Restore SCORM Data</h3>
+<p>Visualizer lets you save all of the SCORM data to your hard drive. Later you can restore this data. This lets you conduct SCO tests over several days.</p>
+<ul>
+  <li>To save the SCORM data, click on the 
+    <input name="Save" type="button" id="Save" value="Save">
+    button. Visualizer will ask you for a file name to store the data. You should store the data in a file named <strong>savedata.htm</strong>. </li>
+  <li>To restore the SCORM data, click on the
+    <input name="Restore" type="button" id="Restore" value="Restore">
+    button. </li>
+</ul>
+<p>This version of SCORM Visualizer can only be used with the Access Point Studio and courses created with the Access Point Studio. You can purchase a general license of SCORM Visualizer from <a href="http://www.e-learningconsulting.com/products/index.html" target="_blank">e-Learning Consulting</a> if you need to use SCORM Visualizer with courses created outside of the Access Point Studio.</p>
+</body>
+</html>

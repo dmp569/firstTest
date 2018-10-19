@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+    <script type="text/javascript">
+    // create function to load .js and .css files
+    function loadJs(p, f) {
+        document.write('<s' + 'cript src="' + p + f + '" type="text/javascript"><' + '\/script>');
+    }
+    function loadCss(p, f) {
+        document.write('<link href="' + p + f + '" type="text/css" rel="stylesheet" \/>');
+    }
+
+    // find the parent window that contains the CDN path
+    for (wCDN = window; !wCDN._sCdnPath && window != parent; wCDN = wCDN.parent);
+
+    // see if the course is launched online
+    var isOnline = (location.protocol == "http:" || location.protocol == "https:") && !wCDN._bDisableCDN;
+    if (isOnline) {
+        // it is, try to load jQuery files
+        loadJs(wCDN._sCdnPath, "jQuery/jquery-1.10.2.min.js");
+    } else {
+        // load all of the jQuery files from the Player folder
+        
+        loadJs("../../../Player/js/libs/", "jquery-1.10.2.min.js");
+        
+    }
+    </script>
+    <script type="text/javascript">
+        // see if the course is launched online
+        if (isOnline) {
+            // it is, see if we loaded jQuery from the CDN
+            if (window.jQuery) {
+                // we did, load the rest of the jQuery files from the CDN
+                
+                
+
+                // try to load page.min.js from the common player
+                loadJs(wCDN._sPlayerPath + "Player/js/", "page.min.js");
+            } else {
+                // load all of the jQuery files from the Player folder
+                
+                loadJs("../../../Player/js/libs/", "jquery-1.10.2.min.js");
+                
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        // see if we loaded page.min.js from an online source
+        if (window.TileManager) {
+            // we did, load the rest of the files from the common player
+            loadCss(wCDN._sPlayerPath + "Player/css/", "pagestyles.css");
+        } else {
+            // load player files from local sources
+            loadJs("../../../Player/js/", "page.min.js");
+            loadCss("../../../Player/css/", "pagestyles.css");
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../Custom/css/pagestyles.css" type="text/css" />
+<script type="text/javascript">
+	//set imagePath to location of icon images relative to the page
+	//var imagePath = "../../../Player/theme/";
+
+	//to override the 2:1 aspectRatio for the page, use the aspectRatioOverride variable
+	//var aspectRatioOverride = 4 / 3;
+
+	//liveTileInterval is used to control timing of live tile(s) on page, with a parameter each to set the time until automatically opening the tile and automatically closing the tile 
+	//  a parameter value of -1 means the open or close action won't occur automatically (only on user click)
+	//var liveTileInterval = { 'openDelay': 5, 'closeDelay': 10 };
+</script>
+</head>
+<body onkeydown="return parent.doKeyDown(event);">
+	<div class="page_container">
+		<div class="content_wrapper">
+			<div class="content_container">
+
+				<!-- If desired, content to appear above tiles can be placed here -->
+				<!--<div>Challenges to giving your best at work require actions that result in courageous
+									contribution.Challenges to giving your best at work require actions that result
+									in courageous contribution.</div><br />-->
+
+				<!-- tile_container is the container for all tiles in the tile framework; it should be a child of content_container (there can be more than one of these, if desired)-->
+				<!-- DO NOT use inline styles to change dimensions of this container; to modify tile sizing, use inline styles on the tile_block elements -->
+				<div class="tile_container">
+
+					<!-- full width content tile -->
+					<div class="widescreen tile">
+					
+						<div class="tile_title accent2_text">
+						<!-- Page Title -->
+							self-assessment criteria
+						<!-- end Page Title -->
+						</div>
+
+						<div class="tile_content scrolling_box">
+							<div class="scroll_content">
+							
+								<div class="tile_detail page_description">
+								<!-- Page Description -->
+								<!-- use "subtle" class for text with grey semilight font -->
+									<span class="subtle">
+									Praesent euismod, tortor non rhoncus auctor arcu nulla interdum
+									odio, dictum lobortis neque turpis eu enim.
+									</span><br />
+									<br />
+									Suspendisse vehicula dapibus elit, ut bibendum lacus mollis vel. Nam et imperdiet
+									misl. Quisque est dui, facillisis nec gravida non, tincidunt vitae dolor. Etiam
+									id libero in dui ultrices ultrices ut eu sem. Vestibulum vel aliquet massa. Fusce
+									id sapien neque, eget vehicula ante.<br />
+									<br />
+									Suspendisse vehicula dapibus elit, ut bibendum lacus mollis vel. Nam et imperdiet
+									nisl. Quisque est sui, facillisis nec gravida non, tincidunt vitae dolor. Etiam
+									id libero in dui ultrices ultrices ut eu sem. Vestibulum vel aliquet massa. Fusce
+									id sapien neque, eget vehicula ante. uspendisse vehicula dapibus elit, ut bibendum
+									lacus mollis vel. Nam et imperdiet nisl. Quisque est dui, facillisis nec gravia
+									non, tincidunt vitae dolor. Etiam id libero in dui ultrices ultrices ut eu sem.
+									Vestibulum vel aliquet massa. Fusce id sapien neque, eget vehicula ante.<br />
+									<br />
+									Suspendisse vehicula dapibus elit, ut bibendum lacus mollis vel. Nam et imperdiet
+									nisl. Quisque est sui, facillisis nec gravida non, tincidunt vitae dolor. Etiam
+									id libero in dui ultrices ultrices ut eu sem. Vestibulum vel aliquet massa. Fusce
+									id sapien neque, eget vehicula ante. uspendisse vehicula dapibus elit, ut bibendum
+									lacus mollis vel. Nam et imperdiet nisl. Quisque est dui, facillisis nec gravia
+									non, tincidunt vitae dolor. Etiam id libero in dui ultrices ultrices ut eu sem.
+									Vestibulum vel aliquet massa. Fusce id sapien neque, eget vehicula ante.
+									<br />
+									Suspendisse vehicula dapibus elit, ut bibendum lacus mollis vel. Nam et imperdiet
+									nisl. Quisque est sui, facillisis nec gravida non, tincidunt vitae dolor. Etiam
+									id libero in dui ultrices ultrices ut eu sem. Vestibulum vel aliquet massa. Fusce
+									id sapien neque, eget vehicula ante. uspendisse vehicula dapibus elit, ut bibendum
+									lacus mollis vel. Nam et imperdiet nisl. Quisque est dui, facillisis nec gravia
+									non, tincidunt vitae dolor. Etiam id libero in dui ultrices ultrices ut eu sem.
+									Vestibulum vel aliquet massa. Fusce id sapien neque, eget vehicula ante.
+									<br />
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar erat non enim
+									fringilla elementum. Sed vel lectus eu sapien sodales pharetra. Nullam a libero
+									tortor, vitae pulvinar quam. In dapibus accumsan risus, egestas pharetra nisi ornare
+									eu. Proin eu massa et purus accumsan iaculis. Integer hendrerit mi sapien, et auctor
+									dolor. Ut feugiat, dolor quis ornare imperdiet, arcu neque imperdiet mauris, quis
+									consectetur sapien nisi luctus purus. In porttitor tempus dui, a elementum diam
+									sagittis id. Integer pretium, turpis nec laoreet viverra, tortor sem pulvinar augue,
+									at fringilla risus orci quis purus. Donec vel accumsan mauris. Aliquam mi enim,
+									sollicitudin condimentum semper nec, pharetra a nisi.
+								<!-- Page Description -->
+								</div>
+
+							</div>
+						</div>
+
+						<!-- live tile popup can be placed here if desired -->
+						<!--
+						<div class="tile_popup accent">
+							<div class="tile_popup_header accent">
+							
+								<div class="tile_popup_header_content">
+									Key Learning Points
+								</div>
+								<a class="expand icon"></a><a class="close icon"></a>
+							</div>
+							<div class="tile_content scrolling_box">
+								<div class="scroll_content">
+									<div class="tile_detail">
+										Praesent euismod, tortor non rhoncus auctor, arcu nulla interdum odio, dictum lobortis
+										neque turpis eu enim. Suspendisse vehicula dapibus elit, ut bibendum lacus mollis
+										vel. Nam et imperdiet nisl, ultrices ultrices ut eu sem. Bestibulum vel Aliquet
+										massa.<br />
+										<br />
+										Praesent euismod, tortor non rhoncus auctor, arcu nulla interdum odio, dictum lobortis
+										neque turpis eu enim. Suspendisse vehicula dapibus elit, ut bibendum lacus mollis
+										vel. Nam et imperdiet nisl, ultrices ultrices ut eu sem. Bestibulum vel Aliquet
+										massa.<br />
+										<ul>
+											<li>Nam posuere diam at nunc cursus rhoncus nulla convallis.</li>
+											<li>Etiam id libero in dui ultrices ultrices ut eu sem.</li>
+											<li>Nam posuere diam at nunc cursus quis.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						-->
+
+					</div>
+				
+				</div>
+				<div class="clear"></div>
+				
+				<!-- If desired, content to appear below tiles can be placed here -->
+				<!--Challenges to giving your best at work require actions that result in courageous
+									contribution.Challenges to giving your best at work require actions that result
+									in courageous contribution.-->
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

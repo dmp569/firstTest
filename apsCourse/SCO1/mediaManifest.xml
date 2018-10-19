@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<contents>
+  <videoPreferences>
+    <item required="yes" mediaPath="" LC="yes" PLC="yes" frameRate="29" frameSize="768x432" videoBitRate="500kbps" audioBitRate="48kbps" bufferingWindow="3" namingScheme="*.mp4" videoPlayerType="MP4" userDownload="true" uiLabel="VideoQualityMedium" notes="frame sizes, frame rates and aspect ratio can change to suite content (recorded demo vs. talking head)">MP4 (standard)</item>
+  </videoPreferences>
+</contents>
