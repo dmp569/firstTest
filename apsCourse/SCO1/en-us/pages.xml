@@ -23,6 +23,6 @@
   </settings>
   <private />
   <level0 name="New Module" mustCompletePrevModules="false" modulesToComplete="" mustCompleteRequiredPages="false" expanded="true" hidden="false">
-    <level1 name="Test Info" typeId="5C748AD0-EDAA-48EB-A715-98F3301200F9" pageId="1" contribute="r" time="1" internal="true" partnerReady="false" expanded="false" hidden="false" />
+    <level1 name="Test Info Testing" typeId="5C748AD0-EDAA-48EB-A715-98F3301200F9" pageId="1" contribute="r" time="1" internal="true" partnerReady="false" expanded="false" hidden="false" />
   </level0>
 </navigation>
